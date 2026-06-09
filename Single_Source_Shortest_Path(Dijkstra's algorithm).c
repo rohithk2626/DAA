@@ -1,3 +1,27 @@
+/*
+ * Single Source Shortest Path using Dijkstra's Algorithm
+ *
+ * Description:
+ * This program implements Dijkstra's Algorithm to find the shortest path
+ * from a given source vertex to all other vertices in a weighted graph.
+ * The graph is represented using a cost adjacency matrix.
+ *
+ * Features:
+ * - Accepts the number of nodes and cost matrix as input.
+ * - Calculates the minimum distance from the source vertex to every other vertex.
+ * - Displays the shortest path cost from the source to each destination node.
+ *
+ * Algorithm Used:
+ * Dijkstra's Greedy Algorithm
+ *
+ * Time Complexity: O(n²)
+ * Space Complexity: O(n)
+ *
+ * Note:
+ * - The graph should not contain negative edge weights.
+ * - A cost of 0 is treated as no direct edge between vertices.
+ */
+
 #include<stdio.h>
 #define infinity 999
 void dijkstra(int n,int v, int cost[10][10],int dist[10]){
