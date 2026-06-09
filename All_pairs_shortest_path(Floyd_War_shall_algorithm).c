@@ -1,3 +1,29 @@
+/*
+ * All-Pairs Shortest Path (APSP) using Floyd-Warshall Algorithm
+ *
+ * Description:
+ * This program implements the Floyd-Warshall Algorithm to find the
+ * shortest paths between all pairs of vertices in a weighted graph.
+ * The graph is represented using an adjacency cost matrix.
+ *
+ * Features:
+ * - Accepts the number of vertices and the cost adjacency matrix.
+ * - Computes the shortest distance between every pair of vertices.
+ * - Displays intermediate matrices after each iteration.
+ * - Prints the final shortest path cost matrix.
+ *
+ * Algorithm Used:
+ * Floyd-Warshall Algorithm (Dynamic Programming)
+ *
+ * Time Complexity: O(n³)
+ * Space Complexity: O(n²)
+ *
+ * Note:
+ * - '999' is used to represent infinity (no direct edge).
+ * - Supports positive and negative edge weights,
+ *   but does not detect negative cycles.
+ */
+
 #include<stdio.h>
 int min(int,int);
 void floyds(int p[10][10],int n){
